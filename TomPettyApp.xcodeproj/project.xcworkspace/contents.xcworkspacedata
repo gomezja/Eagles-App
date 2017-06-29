@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:EaglesApp.xcodeproj">
+      location = "self:/Users/gomezja/Documents/iOS Applications/EaglesApp/TomPettyApp.xcodeproj">
    </FileRef>
 </Workspace>
