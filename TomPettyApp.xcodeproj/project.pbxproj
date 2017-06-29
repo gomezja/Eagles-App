@@ -14,6 +14,8 @@
 		7634B6341F0452C00065A6CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7634B6321F0452C00065A6CA /* LaunchScreen.storyboard */; };
 		7634B63F1F0466EB0065A6CA /* PoetsenOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7634B63E1F0466EB0065A6CA /* PoetsenOne-Regular.ttf */; };
 		7634B6421F0468BB0065A6CA /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634B6411F0468BB0065A6CA /* VideoVC.swift */; };
+		7686612E1F05A3E8009D889F /* PettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686612D1F05A3E8009D889F /* PettyCell.swift */; };
+		768661301F05A59C009D889F /* TomPetty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686612F1F05A59C009D889F /* TomPetty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7634B6351F0452C00065A6CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7634B63E1F0466EB0065A6CA /* PoetsenOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PoetsenOne-Regular.ttf"; sourceTree = "<group>"; };
 		7634B6411F0468BB0065A6CA /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		7686612D1F05A3E8009D889F /* PettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PettyCell.swift; sourceTree = "<group>"; };
+		7686612F1F05A59C009D889F /* TomPetty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TomPetty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		7634B63B1F04535E0065A6CA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7686612D1F05A3E8009D889F /* PettyCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -81,6 +86,7 @@
 		7634B63C1F0453660065A6CA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7686612F1F05A59C009D889F /* TomPetty.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -175,7 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7686612E1F05A3E8009D889F /* PettyCell.swift in Sources */,
 				7634B6421F0468BB0065A6CA /* VideoVC.swift in Sources */,
+				768661301F05A59C009D889F /* TomPetty.swift in Sources */,
 				7634B62C1F0452C00065A6CA /* MainVC.swift in Sources */,
 				7634B62A1F0452C00065A6CA /* AppDelegate.swift in Sources */,
 			);

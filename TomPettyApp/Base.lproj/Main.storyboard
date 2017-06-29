@@ -44,9 +44,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="aeE-h5-W4E"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                                 <state key="normal" title="Top Songs">
-                                                    <color key="titleColor" red="0.71990334990000004" green="0.67174327369999998" blue="0.61964416499999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleColor" red="0.64268422130000002" green="0.27459940309999997" blue="0.29027128219999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjU-vq-N7f">
@@ -54,8 +54,8 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="yvT-Uj-F7d"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                                <state key="normal" title="Top VideIIos">
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Top Videos">
                                                     <color key="titleColor" red="0.71990334990000004" green="0.67174327369999998" blue="0.61964416499999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
@@ -64,7 +64,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Iar-eN-tJ2"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                                 <state key="normal" title="Events">
                                                     <color key="titleColor" red="0.71990334990000004" green="0.67174327369999998" blue="0.61964416499999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
@@ -84,7 +84,7 @@
                                 <rect key="frame" x="0.0" y="244" width="375" height="423"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="oVq-f0-hmf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PettyCell" rowHeight="80" id="oVq-f0-hmf" customClass="PettyCell" customModule="TomPettyApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oVq-f0-hmf" id="xaP-1x-3YE">
@@ -116,6 +116,10 @@
                                                 <constraint firstItem="mb9-kH-mAr" firstAttribute="leading" secondItem="xaP-1x-3YE" secondAttribute="leadingMargin" id="iit-5v-Zjs"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="mb9-kH-mAr" id="wMC-40-xud"/>
+                                            <outlet property="videoTitle" destination="G6C-ZO-WcK" id="671-Dg-GuF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -135,6 +139,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="LSb-8a-QCR" id="1Ha-64-PAT"/>
                         <segue destination="DSC-zY-soR" kind="showDetail" identifier="VideoVC" id="zOE-a1-d3d"/>
                     </connections>
                 </viewController>
