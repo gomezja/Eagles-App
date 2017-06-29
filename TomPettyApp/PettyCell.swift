@@ -20,6 +20,19 @@ class PettyCell: UITableViewCell {
     
     func updateUI(tomPetty: TomPetty) {
         videoTitle.text = tomPetty.videoTitle
+        
+        let url = URL(string: tomPetty.imageURL)!
+        
+        DispatchQueue.global().async {
+            do {
+                let data = try Data(contentsOf: url)
+                DispatchQueue.global().sync {
+                    self.videoPreviewImage.image = UIImage(data: data)
+                }
+            } catch {
+                
+            }
+        }
     }
 
 }
