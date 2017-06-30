@@ -55,5 +55,21 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tomPettys.count
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let tomPetty = tomPettys[indexPath.row]
+        
+        performSegue(withIdentifier: "VideoVC", sender: tomPetty)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destination = segue.destination as? VideoVC {
+            
+            if let tom = sender as? TomPetty {
+                destination.tomPetty = tom
+            }
+        }
+    }
 }
 

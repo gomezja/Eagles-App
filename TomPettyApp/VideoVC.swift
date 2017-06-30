@@ -10,10 +10,25 @@ import UIKit
 
 class VideoVC: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+    
+    @IBOutlet weak var titleLbl: UILabel!
+    private var _tomPetty: TomPetty!
+    
+    var tomPetty: TomPetty {
+        get {
+            return _tomPetty
+        } set {
+            _tomPetty = newValue
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        titleLbl.text = tomPetty.videoTitle
+        webView.loadHTMLString(tomPetty.videoURL, baseURL: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
